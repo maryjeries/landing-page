@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta name="smoove-form-validation" content="none">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>השיווק הוא לא הבעיה - מארי ג'יריס</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-bg: #F9F8F4; /* רקע קרם בהיר */
+            --brand-text: #2B3A4A; /* כחול-אפור כהה לטקסט */
+            --brand-accent: #C07B46; /* כתום-חמרה/קאמל להדגשות */
+            --brand-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: var(--brand-bg);
+            color: var(--brand-text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 25px 15px;
+        }
+
+        h1, h2, h3 {
+            color: var(--brand-text);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 16px;
+            color: #111111;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--brand-accent);
+            margin-top: 0;
+        }
+
+        .hero-section {
+            background: transparent;
+            box-shadow: none;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .hero-intro {
+            font-size: 1.15rem;
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .hero-empathy {
+            font-size: 1.1rem;
+            color: #444444;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .hero-callout {
+            color: var(--brand-accent);
+            font-weight: 700;
+        }
+
+        .value-box {
+            font-size: 1.05rem;
+            color: #222222;
+            line-height: 1.6;
+            background-color: var(--brand-white);
+            padding: 16px 20px;
+            border-radius: 8px;
+            border-right: 4px solid var(--brand-accent);
+            margin-bottom: 25px;
+            text-align: right;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .form-box {
+            background: var(--brand-white);
+            border: 2px solid var(--brand-accent);
+            border-radius: 8px;
+            padding: 20px 15px;
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .form-box h3 {
+            font-size: 1.2rem;
+            color: var(--brand-accent);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            background: var(--brand-white);
+            border-radius: 8px;
+            padding: 30px 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-right: 28px;
+            margin-bottom: 14px;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: var(--brand-accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .about-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--brand-accent);
+            flex-shrink: 0;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--brand-accent);
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .hero-intro { font-size: 1.05rem; }
+            .container { padding: 15px 12px; }
+            .section { padding: 20px 15px; }
+            .about-section { flex-direction: column; text-align: center; }
+            .about-image { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>השיווק הוא לא הבעיה.</h1>
+
+            <p class="hero-intro">
+                מעלה פוסטים, מנסה שיטות ומרגישה שאת עושה <strong>"כל מה שצריך"</strong> בלי לראות תנועה?
+            </p>
+
+            <p class="hero-empathy">
+                כשהתחלת את העסק זה לא מה שחשבת שיקרה, נכון?<br>
+                <span class="hero-callout">ואת צודקת. תפסיקי לחפש עוד רעיון לשיווק!</span>
+            </p>
+
+            <div class="value-box">
+                קחי פאוזה והורידי את מדריך העבודה הקצר שהכנתי לך. הוא יקח אותך צעד אחר צעד, עד שתביני מה בדיוק צריך לדייק כדי לקבל יותר פניות לפני שאת מעלה עוד תוכן.
+            </div>
+
+            <div class="form-box">
+                <h3>הכניסי פרטים והמדריך בדרך אלייך למייל:</h3>
+                
+                <iframe width="440" height="340" style="max-width:100%" src="https://embed.vp4.me/LandingPage,6527bf0e-4fe3-4686-8ff7-f82bb387f3a8,616046.aspx?r=1009" frameborder="0" allowfullscreen class="embediframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation allow-top-navigation-by-user-activation"></iframe>
+                <script type="text/javascript" src="https://embed.vp4.me/core/embd.min.js?v=20260727001451"></script>
+
+                <small style="display: block; margin-top: 15px; color: #666;">בהרשמה את מאשרת לקבל ממני את המדריך ועדכונים מקצועיים מדי פעם. אפשר להסיר את עצמך בכל עת.</small>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section">
+            <h2>ניסית יותר מרוב האנשים שאת מכירה — וזה עדיין לא עובד?</h2>
+            <p>יש הבדל גדול בין 'לא ניסית מספיק' לבין 'ניסית במקום הלא נכון'.</p>
+            <ul>
+                <li>את משקיעה זמן, מחשבה וכסף בתוכן, בפוסטים, בהמלצות או בקורס שהבטיח שיטה אבל התוצאות לא תואמות את המאמץ.</li>
+                <li>את מרגישה שהדחף הטבעי הוא לחפש עוד ערוץ, עוד נוסחה או עוד סדנה, אבל מתחילה להבין שהבעיה היא לא חוסר בידע.</li>
+                <li>את רוצה בדיקת מציאות ישרה שתראה לך איפה הדברים באמת נתקעים, בלי הבטחות קסם ובלי למכור לך עוד 'אסטרטגיה'.</li>
+            </ul>
+            <p>המדריך הזה לא בא להוסיף לך עוד שיטה או עוד משימות לרשימה. הוא בא לבדוק את ארבעת היסודות שקודמים לכל החלטה שיווקית, ולחשוף את מה שבאמת מעכב אותך מתחת לפני השטח.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h2>מה מחכה לך בתוך המדריך?</h2>
+            <p>חוברת עבודה קצרה, שנכתבה כדי לצאת ממנה עם תשובות אמיתיות — לא עוד רשימת משימות:</p>
+            <ul>
+                <li>תדעי לומר במשפט אחד מה באמת משתנה אצל הלקוחה שלך בזכות העבודה איתך ולא רק מה את מוכרת לה.</li>
+                <li>תזהי את הפער בין מה שהלקוחה שלך חושבת שהיא צריכה, לבין מה שבאמת מעכב אותה — הפער שרוב השיווק מפספס.</li>
+                <li>תביני למה הדרך שבה את עובדת מתאימה בדיוק ללקוחה הנכונה, ותפסיקי לנחש למה 'לאחרות זה עובד ולך לא'.</li>
+                <li>תדעי איפה נכון לפגוש אותה ולמה זה כנראה לא הערוץ שבו את משקיעה הכי הרבה זמן היום.</li>
+                <li>ותגלי, אולי בפעם הראשונה בכתב, מה עוצר אותך באמת — וזה כנראה לא מה שחשבת.</li>
+            </ul>
+            <p style="margin-bottom: 0;">כל זה מתחבר, בעמוד האחרון, לצעד אחד ממוקד שאפשר לעשות כבר השבוע.</p>
+        </div>
+
+        <!-- About Section -->
+        <div class="section about-section">
+            <img src="https://i.postimg.cc/rm7sSqXX/20230427-220300.jpg" alt="מארי ג'יריס" class="about-image">
+            <div>
+                <h2>נעים להכיר, מארי ג'יריס</h2>
+                <p><strong>מאמנת עסקית ואישית</strong></p>
+                <p>חמש שנים שאני מלווה בעלות ובעלי עסקים כמאמנת עסקית ואישית, ומתוכן שלוש שנים גם כמנטורית עסקית. ליוויתי בעלות ובעלי עסקים בכל שלב — מי שעדיין מגלגלת רעיון בראש ורוצה להפוך אותו למשהו אמיתי, מי שהרעיון כבר מתחיל להתגבש לכדי עסק, ומי שכבר יש לה עסק פעיל אבל תקועה או רוצה לצמוח הלאה.</p>
+                <p>הייתי בדיוק בנקודה שבה את נמצאת היום. הלכתי סביב עצמי, רצתי לשווק עוד לפני שהבנתי לעומק מה הערך הייחודי שלי, נרשמתי לעוד סדנה והורדתי עוד מדריך. עשיתי את כל הניסויים והטעויות שרק אפשר. כיום אני יודעת שברגע שיש מישהי חדה שלוקחת אותך ביד, מנווטת אותך בקצב שמתאים לך ומכוונת בול למה שהעסק שלך צריך — חוסכים שנים של תסכול ולא מעט כסף.</p>
+                <div class="quote">"עסק טוב לא נבנה מתוך נוסחאות מדף, הוא נבנה סביב האישה שמובילה אותו"</div>
+            </div>
+        </div>
+
+        <!-- Footer CTA -->
+        <div class="hero-section">
+            <h2>מוכנה לבדוק מה באמת עוצר את העסק שלך?</h2>
+            <p>מלאי את הפרטים כאן למטה ומדריך המתנה בדרך אלייך למייל.</p>
+            <div class="form-box">
+                <iframe width="440" height="340" style="max-width:100%" src="https://embed.vp4.me/LandingPage,6527bf0e-4fe3-4686-8ff7-f82bb387f3a8,616046.aspx?r=1009" frameborder="0" allowfullscreen class="embediframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation allow-top-navigation-by-user-activation"></iframe>
+                <script type="text/javascript" src="https://embed.vp4.me/core/embd.min.js?v=20260727001451"></script>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
